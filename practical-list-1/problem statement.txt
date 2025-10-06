@@ -1,0 +1,22 @@
+Create a real-time voting system where users can vote on a poll and
+see the results updated in real-time using only JavaScript, HTML,
+and CSS.
+HTML: A simple poll interface with buttons to vote and display the
+results.
+CSS: Styles the poll and results.
+JavaScript:
+Defines a vote function to update the local votes.
+Updates the vote counts in the UI.
+Simulates real-time voting by randomly incrementing votes.
+Notes:
+ Votes object: Keeps track of the current vote counts for each
+language. It initializes each language with 0 votes.
+ vote function: This function is called when a button is
+clicked. It increments the vote count for the selected language
+and calls updateVotes to refresh the displayed vote counts.
+ updateVotes function: Updates the displayed vote counts by
+setting the text content of the spans in the results section to
+the current vote counts.
+ setInterval: Simulates real-time updates by randomly
+incrementing the vote counts every 2 seconds. This mimics
+votes coming in from other users in real time.

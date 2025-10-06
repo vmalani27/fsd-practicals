@@ -1,0 +1,8 @@
+Create a simple weather application that displays a hardcoded
+temperature for a given city. This simple weather application
+demonstrates basic HTML structure for user input, CSS styling for
+layout and appearance, and JavaScript functionality to handle user
+interactions and display dynamic content. It provides a foundational
+example of building an interactive web application using essential
+front-end technologies.
+Technologies Used: HTML, CSS, JavaScript (ES6)

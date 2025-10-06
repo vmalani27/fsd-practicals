@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/v4-shims.min.css">
+</head>
+<body>
+    
+    <div class="container">
+        <h1>vote for your favourite langauge</h1>
+
+        <ul>
+            <li>
+                <button class="btn" data-lang="javascript">javascript</button>
+            </li>
+            <li>
+                <button class="btn" data-lang="python">python</button>
+            </li>
+            <li>
+                <button class="btn" data-lang="java">java</button>
+            </li>
+        </ul>
+        <div class="results">
+            <ul>
+                <li>
+                    <p id="js-result">javascript: <span>0</span></p>
+                </li>
+                <li>
+                    <p id="py-result">python: <span>0</span></p>
+                </li>
+                <li>
+                    <p id="java-result">java: <span>0</span></p>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        // Simple poll counts
+        const counts = {
+            javascript: 0,
+            python: 0,
+            java: 0
+        };
+
+        // Add event listeners to buttons
+        document.querySelectorAll('.btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                const lang = this.getAttribute('data-lang');
+                counts[lang]++;
+                updateResults();
+            });
+        });
+
+        function updateResults() {
+            document.querySelector('#js-result span').textContent = counts.javascript;
+            document.querySelector('#py-result span').textContent = counts.python;
+            document.querySelector('#java-result span').textContent = counts.java;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,115 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+}
+
+/* Top Bar */
+.top-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #232f3e;
+  padding: 10px 20px;
+  color: white;
+}
+
+/* Logo */
+.top-bar h1 {
+  font-size: 2rem;
+  letter-spacing: 2px;
+  margin: 0;
+  transition: color 0.3s;
+}
+
+.top-bar h1:hover {
+  color: #ffd700;
+}
+
+/* Search Form */
+.top-bar form {
+  display: flex;
+  flex: 1;
+  max-width: 500px;
+  margin: 0 20px;
+}
+
+.top-bar input[type="text"] {
+  flex: 1;
+  padding: 8px 10px;
+  border: none;
+  border-radius: 4px 0 0 4px;
+  font-size: 1rem;
+}
+
+.top-bar button {
+  padding: 8px 12px;
+  background-color: #febd69;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.top-bar button:hover {
+  background-color: #f3a847;
+}
+
+/* Main Navigation (Top Bar) */
+.top-bar nav ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+.top-bar nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 8px 10px;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+
+.top-bar nav ul li a:hover {
+  background-color: #37475a;
+}
+
+/* Bottom Bar */
+.bottom-bar {
+  background-color: #37475a;
+  padding: 10px 20px;
+}
+
+.bottom-bar ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+.bottom-bar ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: bold;
+  padding: 6px 10px;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+
+.bottom-bar ul li a:hover {
+  background-color: #485769;
+}
+
+/* Utility: Centering Divs */
+.center-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
